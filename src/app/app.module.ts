@@ -4,20 +4,21 @@ import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './compoents/projects/projects.component';
+
 import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ProjectsComponent,
     CreateComponent,
     ContactComponent,
-    ErrorComponent 
+    ErrorComponent,
+    ProjectsComponent 
   ],
   imports: [
     BrowserModule,
