@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="project">
     <h2>{{title}}</h2>
 
     <div class="message success" *ngIf="status == 'success'">
@@ -49,6 +49,11 @@
 
         <p>
             <label for="image">Imagen</label>
+            <span class="image" *ngIf="project.image" style="float: none;">
+              
+                  <img src="{{url+'get-image/'+project.image}}" style="width: 100px;" />
+          
+            </span><br/>
             <input type="file" name="image" placeholder="subir imagen" (change)="fileChangeEvent($event)"/>
         </p>
 
