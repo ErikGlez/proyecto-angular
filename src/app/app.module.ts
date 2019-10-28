@@ -12,6 +12,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
+import { SliderComponent } from './components/slider/slider.component';
+
+
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { EditComponent } from './components/edit/edit.component';
     ErrorComponent,
     ProjectsComponent,
     DetailComponent,
-    EditComponent 
+    EditComponent,
+    SliderComponent 
   ],
   imports: [
     BrowserModule,
